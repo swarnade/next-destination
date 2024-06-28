@@ -4,6 +4,7 @@ import {
   RouterProvider
 } from "react-router-dom"
 import Homepage from "./Frontend/Components/Homepage";
+import Card from "./Frontend/Components/Card";
 import SearchPage from "./Frontend/Components/SearchPage";
 
 function App() {
@@ -17,11 +18,11 @@ function App() {
       element : <SearchPage/>
     }
   ])
-
   return (
     <>
       <RouterProvider router={appRouter}/>
-    </>
+      
+   </>
   );
 }
 
