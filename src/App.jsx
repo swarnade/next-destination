@@ -16,6 +16,10 @@ function App() {
     {
       path : "/search",
       element : <SearchPage/>
+    },
+    {
+      path : "/nearest",
+      element : <Card/>
     }
   ])
   return (
