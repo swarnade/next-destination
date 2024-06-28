@@ -1,12 +1,25 @@
 import { useState } from 'react'
-import './App.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+import HomePage from './Frontend/Component/HomePage';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const appRouter = createBrowserRouter([
+    {
+      path : "/",
+      element :<HomePage/>,
+    }
+    
+  ])
 
   return (
     <>
-      <h1>Tip planner</h1>
+      <RouterProvider router={appRouter}/>
     </>
   )
 }
