@@ -6,7 +6,7 @@ const WeatherCard = ({ data }) => {
   console.log(data?.coord);
 
   return (
-    <div className="weather-card p-4 mw-w-sm mx-auto bg-mainBgColor min-h-screen text-white shadow-md overflow-hidden">
+    <div className="weather-card p-4 mw-w-sm mx-auto bg-mainBgColor h-auto text-white shadow-md overflow-hidden">
       <h2 className=" text-center">Weather Information of {data?.name}</h2>
 
       <div className="flex justify-center gap-6 mt-4 text-sm">
