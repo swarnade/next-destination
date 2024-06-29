@@ -18,6 +18,7 @@ const WeatherPage = () => {
   return (
     <div>
       <WeatherCard data={weather} />
+      <Test />
 /    </div>
   );
 };

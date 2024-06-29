@@ -33,10 +33,6 @@ function App() {
       element: <WeatherPage />,
     },
     {
-      path: "/map",
-      element: Test,
-    },
-    {
       path: "/id/restaurant",
       element: <EachResturants />,
     },
