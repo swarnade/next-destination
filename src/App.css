@@ -1,5 +1,6 @@
-.displayFlex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.linear-bg{
+    background: #000123;
+    background: radial-gradient(circle, #232452 2%,
+                #000123 100%);
+
 }
