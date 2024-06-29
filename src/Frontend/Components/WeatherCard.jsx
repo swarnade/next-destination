@@ -1,6 +1,5 @@
 import React from "react";
 import Weather from "../../backend/Weather/Weather";
-
 import Test from "../../backend/Map/test";
 const WeatherCard = ({ data }) => {
   console.log(data?.coord);

@@ -1,12 +1,9 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./Frontend/Components/Homepage";
-import Card from "./Frontend/Components/Card";
+import Card from "./Frontend/Components/NearbyComp";
 import SearchPage from "./Frontend/Components/SearchPage";
-import Weather from "./backend/Weather/Weather";
-import WeatherCard from "./Frontend/Components/WeatherCard";
-import WeatherPage from "./Frontend/Components/WeatherPage";
-import EachResturants from "./Frontend/Components/EachResturants";
+import Displaypage from "./Frontend/Components/Displaypage";
 import Hotel from "./backend/Hotels/Hotel";
 
 function App() {
@@ -29,11 +26,7 @@ function App() {
     },
     {
       path: "/place/:place",
-      element: <WeatherPage />,
-    },
-    {
-      path: "/id/restaurant",
-      element: <EachResturants />,
+      element: <Displaypage />,
     },
     {
       path: "/hotels",
