@@ -29,10 +29,6 @@ function App() {
       element: <Displaypage />,
     },
     {
-      path: "/id/restaurant",
-      element: <EachResturants />,
-    },
-    {
       path: "/hotels",
       element: <Hotel />,
     },

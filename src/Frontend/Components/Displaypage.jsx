@@ -4,6 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Test from "../../backend/Map/test";
 import NearbyComp from "./NearbyComp";
+import HotelCard from "./HotelsCard";
 const WeatherPage = () => {
   const [weather, setWeather] = useState();
   const { place } = useParams();
@@ -21,6 +22,7 @@ const WeatherPage = () => {
       <WeatherCard data={weather} />
       <Test lat={weather?.coord?.lat} lon={weather?.coord?.lon}/>
       <NearbyComp lat={weather?.coord?.lat} lon={weather?.coord?.lon}></NearbyComp>
+      <HotelCard></HotelCard>
     </div>
   );
 };

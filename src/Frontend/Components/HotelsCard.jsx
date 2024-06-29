@@ -7,6 +7,7 @@ const HotelCard = ({ title, secondaryInfo, provider, priceForDisplay, bubbleRati
 
   return (
     <>
+
     </>
   );
 }
