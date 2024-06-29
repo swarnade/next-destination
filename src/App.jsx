@@ -6,6 +6,8 @@ import SearchPage from "./Frontend/Components/SearchPage";
 import Weather from "./backend/Weather/Weather";
 import WeatherCard from "./Frontend/Components/WeatherCard";
 import WeatherPage from "./Frontend/Components/WeatherPage";
+import EachResturants from "./Frontend/Components/EachResturants";
+
 function App() {
   const weatherData = {};
   const appRouter = createBrowserRouter([
@@ -25,7 +27,16 @@ function App() {
       path: "/weather/:place",
       element: <WeatherPage />,
     },
+    {
+      path: "/nearest",
+      element: <Card />,
+    },
+    {
+      path: "/id/restaurant",
+      element: <EachResturants />,
+    },
   ]);
+
   return (
     <>
       <RouterProvider router={appRouter} />
