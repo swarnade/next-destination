@@ -16,7 +16,7 @@ const WeatherPage = () => {
 
   //   console.log(weather);
   return (
-    <div>
+    <div className="bg-mainBgColor min-h-screen flex flex-col justify-center">
       <WeatherCard data={weather} />
       <Test data={weather} />
     </div>
