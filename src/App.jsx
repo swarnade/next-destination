@@ -6,6 +6,7 @@ import {
 import Homepage from "./Frontend/Components/Homepage";
 import Card from "./Frontend/Components/Card";
 import SearchPage from "./Frontend/Components/SearchPage";
+import EachResturants from "./Frontend/Components/EachResturants";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -20,6 +21,11 @@ function App() {
     {
       path : "/nearest",
       element : <Card/>
+    },
+    {
+      path : '/id/restaurant',
+      element : <EachResturants/>
+
     }
   ])
   return (
