@@ -13,7 +13,7 @@ const WeatherPage = () => {
       .then((res) => setWeather(res.data));
   }, [place]);
 
-//   console.log(weather);
+  console.log(weather);
   return (
     <div>
       <WeatherCard data={weather} />

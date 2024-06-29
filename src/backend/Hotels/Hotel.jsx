@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 // import "./weather.css";
-import axios from "axios";
+import axios from 'axios';
 import Weather from "../Weather/Weather";
 
 const Hotels = ({ data }) => {
