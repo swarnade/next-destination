@@ -21,7 +21,6 @@ const WeatherCard = ({ data }) => {
          */}
         <div className="">Cloudiness: {data?.clouds.all}%</div>
       </div>
-      <Test />
     </div>
   );
 };

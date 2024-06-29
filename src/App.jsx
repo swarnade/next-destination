@@ -29,7 +29,7 @@ function App() {
       element: <Hotel />,
     },
     {
-      path: "/weather/:place",
+      path: "/place/:place",
       element: <WeatherPage />,
     },
     {
