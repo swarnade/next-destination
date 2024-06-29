@@ -1,5 +1,7 @@
-
+import React from 'react';
+import Hotel from './HotelsCard.jsx'
 const Card = ({ title, image, description }) => {
+  
   return (
     <div className='w-full min-h-screen bg-mainBgColor text-white' > 
     <div className=" w-96 rounded p-10 pb-0">
@@ -13,7 +15,7 @@ const Card = ({ title, image, description }) => {
     </div>
     
     <div className=" w-96 rounded p-10">
-      <div className='text-3xl pb-5'>Nearest Restaurant</div>
+      <div className='text-3xl pb-5'>Hotels</div>
       <img className="w-full h-48 object-cover" src={image} alt={title} />
       <div>
         <div className="font-bold text-xl mb-2">{title}</div>
