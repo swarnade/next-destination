@@ -8,7 +8,7 @@ export default function EachResturants() {
         <img src="" alt="" srcset="" />
       </div>
 
-      <div className="right w-auto bg-gray-800 p-5 max-h-96 w-auto"> 
+      <div className="right w-auto bg-gray-800 p-5 max-h-96"> 
         <div>Rate : {}</div>
         <div>Open : {}</div>
         <div>Menu : {}</div>
