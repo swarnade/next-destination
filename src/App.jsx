@@ -8,7 +8,6 @@ import WeatherCard from "./Frontend/Components/WeatherCard";
 import WeatherPage from "./Frontend/Components/WeatherPage";
 import EachResturants from "./Frontend/Components/EachResturants";
 import Hotel from "./backend/Hotels/Hotel";
-import Test from "./backend/Map/test";
 
 function App() {
   const appRouter = createBrowserRouter([
