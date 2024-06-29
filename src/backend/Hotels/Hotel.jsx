@@ -12,7 +12,7 @@ const Hotels = ({ data }) => {
       .get(
         `${import.meta.env.VITE_SERVER}/hotels?lat=${data.coord.lon}&lon=${
           data.coord.lan
-        }&cin=${"2024-09-24"}&cout=${"2024-09-30"}`
+        }&cin=${data.coord.checkin}&cout=${data.coord.checkout}`
       )
       .then((res) => setHotels(res.data))
       .catch((err) => console.error("Error fetching hotels:", err));
