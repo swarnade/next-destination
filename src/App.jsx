@@ -8,9 +8,9 @@ import WeatherCard from "./Frontend/Components/WeatherCard";
 import WeatherPage from "./Frontend/Components/WeatherPage";
 import EachResturants from "./Frontend/Components/EachResturants";
 import Hotel from "./backend/Hotels/Hotel";
+import Test from "./backend/Map/test";
 
 function App() {
-
   const appRouter = createBrowserRouter([
     {
       path: "/",
@@ -22,7 +22,7 @@ function App() {
     },
     {
       path: "/nearest",
-      element: <Card  />,
+      element: <Card />,
     },
     {
       path: "/hotel",
@@ -32,15 +32,18 @@ function App() {
       path: "/weather/:place",
       element: <WeatherPage />,
     },
-
+    {
+      path: "/map",
+      element: Test,
+    },
     {
       path: "/id/restaurant",
       element: <EachResturants />,
     },
     {
-      path : "/hotels",
-      element : <Hotel/>
-    }
+      path: "/hotels",
+      element: <Hotel />,
+    },
   ]);
 
   return (

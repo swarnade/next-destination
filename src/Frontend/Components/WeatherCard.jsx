@@ -1,6 +1,7 @@
 import React from "react";
 import Weather from "../../backend/Weather/Weather";
 
+import Test from "../../backend/Map/test";
 const WeatherCard = ({ data }) => {
   console.log(data?.coord);
 
@@ -14,12 +15,13 @@ const WeatherCard = ({ data }) => {
         <div> Temperature: {data?.main.temp} K </div>
         <div>
           {" "}
-          Feels Like: {data?.main.feels_like} K<br/>{" "}
+          Feels Like: {data?.main.feels_like} K<br />{" "}
         </div>
-        {/* 
+        {/*
          */}
         <div className="">Cloudiness: {data?.clouds.all}%</div>
       </div>
+      <Test />
     </div>
   );
 };
