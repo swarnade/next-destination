@@ -17,8 +17,8 @@ const WeatherPage = () => {
       .then((res) => setWeather(res.data));
     console.log(weather);
   }, [place]);
-
   //   console.log(weather);
+
   return (
     <div className="bg-mainBgColor min-h-screen flex flex-col justify-center">
       <WeatherCard data={weather} />
@@ -37,7 +37,6 @@ const WeatherPage = () => {
         ></NearbyComp>
         <HotelCard></HotelCard>
       </div>
-
     </div>
   );
 };
