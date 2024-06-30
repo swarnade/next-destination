@@ -2,6 +2,7 @@
 import "../../App.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { IoMdSearch } from "react-icons/io";
 
 export default function SearchPage() {
   const [input, setInput] = useState("");
@@ -20,7 +21,7 @@ export default function SearchPage() {
     <div className="linear-bg w-full h-screen">
       <form
         onSubmit={handleSubmit}
-        className="flex items-center gap-4 md:items-end flex-col md:flex-row"
+        className="flex justify-center items-center gap-4 md:items-end flex-col md:flex-row"
       >
         <input
           className="w-4/5 md:w-2/4 p-2 pl-5 bg-gray-500 text-gray-100 font-bold text-lg mt-40 rounded-lg"
@@ -31,9 +32,10 @@ export default function SearchPage() {
         />
         <button
           type="submit"
-          className="bg-gray-500 px-4 py-2 font-bold text-white cursor-pointer rounded-lg ml-3"
+          className="flex bg-gray-500 px-4 py-2 font-bold text-white cursor-pointer rounded-lg ml-3"
         >
           Search
+          <IoMdSearch className="inline mt-1" />
         </button>
       </form>
     </div>
