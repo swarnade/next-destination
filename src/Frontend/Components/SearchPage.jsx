@@ -20,7 +20,7 @@ export default function SearchPage() {
     <div className="linear-bg w-full h-screen">
       <form onSubmit={handleSubmit}>
         <input
-          className="w-2/4 p-2 pl-5 bg-gray-500 text-gray-100 font-bold text-lg ml-80 mt-40 rounded-lg"
+          className="w-2/4 p-2 pl-5 bg-gray-500 text-gray-100 font-bold text-lg mt-40 rounded-lg"
           type="text"
           onChange={handleChange}
           value={input}
