@@ -57,7 +57,7 @@ export default function SideBar() {
         className="bg-btnColor text-black font-bold w-auto m-auto p-3 rounded-lg mt-4"
         onClick={() => setLoading(true)}
       >
-        {loading ? <ImSpinner9 /> : "Plan my Tour"}
+        {loading ? <ImSpinner9 className="animate-spin" /> : "Plan my Tour"}
       </button>
 
       {/* api response */}

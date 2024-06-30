@@ -40,7 +40,7 @@ export default function Cardsub({
             >
               <path d="M12 2l2.4 6.2H22l-5.1 4.5 1.9 6.3L12 16.4 5.2 19.1l1.9-6.3L2 8.2h7.6L12 2z" />
             </svg>
-            <span className="ms-2">{rating}</span> rated by{" "}
+            <span className="ms-2">{rating}</span>{" "} rated by{" "}
             {kFormatter(user_ratings_total)}+ users
           </div>
           <a

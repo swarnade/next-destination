@@ -12,6 +12,10 @@ export default function Iternary({
 
   useEffect(() => {
     if (checkIn && checkOut && budget) {
+      if (budget < 5000) {
+        alert("Budget should be greater than 5000");
+        return;
+      }
       axios
         .get(
           `${
@@ -21,6 +25,7 @@ export default function Iternary({
         .then((res) => setIternaryData(res.data.itinerary))
         .catch((err) => console.log(err));
     }
+    setLoading(false);
   }, [checkIn, checkOut, budget]);
 
   console.log(iternaryData);
