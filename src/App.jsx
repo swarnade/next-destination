@@ -5,6 +5,7 @@ import Card from "./Frontend/Components/NearbyComp";
 import SearchPage from "./Frontend/Components/SearchPage";
 import Displaypage from "./Frontend/Components/Displaypage";
 import Hotel from "./backend/Hotels/Hotel";
+import HotelCard from "./Frontend/Components/HotelsCard";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -30,7 +31,7 @@ function App() {
     },
     {
       path: "/hotels",
-      element: <Hotel />,
+      element: <HotelCard />,
     },
   ]);
 
