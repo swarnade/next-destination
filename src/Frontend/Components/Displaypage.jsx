@@ -35,7 +35,7 @@ const WeatherPage = () => {
           lat={weather?.coord?.lat}
           lon={weather?.coord?.lon}
         ></NearbyComp>
-        <HotelCard></HotelCard>
+        {/* <HotelCard></HotelCard> */}
       </div>
     </div>
   );
