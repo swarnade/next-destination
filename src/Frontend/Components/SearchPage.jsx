@@ -18,17 +18,20 @@ export default function SearchPage() {
   };
   return (
     <div className="linear-bg w-full h-screen">
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        className="flex items-center gap-4 md:items-end flex-col md:flex-row"
+      >
         <input
-          className="w-2/4 p-2 pl-5 bg-gray-500 text-gray-100 font-bold text-lg mt-40 rounded-lg"
+          className="w-4/5 md:w-2/4 p-2 pl-5 bg-gray-500 text-gray-100 font-bold text-lg mt-40 rounded-lg"
           type="text"
           onChange={handleChange}
           value={input}
-          placeholder="Explore Your Next Destination"
+          placeholder="Search Your Favorite place"
         />
         <button
           type="submit"
-          className="bg-gray-500 p-2 font-bold text-white cursor-pointer rounded-lg ml-3"
+          className="bg-gray-500 px-4 py-2 font-bold text-white cursor-pointer rounded-lg ml-3"
         >
           Search
         </button>
