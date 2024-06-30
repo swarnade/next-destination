@@ -24,7 +24,7 @@ const Test = ({ lat, lon }) => {
     <div className="w-99 m-auto">
       <APIProvider apiKey={import.meta.env.VITE_MAP_KEY}>
         <Map
-          style={{ width: "80dvw", height: "80dvh" }}
+          style={{ width: "40dvw", height: "75dvh" }}
           defaultCenter={{ lat: Number(lat ?? 20.5937), lng: Number(lon ?? 78.9629) }}
           defaultZoom={5}
         >
